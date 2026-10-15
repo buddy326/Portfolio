@@ -10,7 +10,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Aman Monga</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +21,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Aman Monga</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -38,16 +38,20 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img
+          src="./assets/ProfilePic.jpeg"
+          alt="Aman Monga profile picture"
+          class="profile-pic"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Aman Monga</h1>
+        <p class="section__text__p2">Fullstack Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/FSResume.pdf')"
           >
             Download CV
           </button>
@@ -60,13 +64,13 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/aman-monga-2583a8207'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/buddy326'"
           />
         </div>
       </div>
@@ -77,7 +81,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/ProfilePic2.png"
             alt="Profile picture"
             class="about-pic"
           />
@@ -91,7 +95,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>2+ years <br />Full Stack Development</p>
             </div>
             <div class="details-container">
               <img
@@ -100,17 +104,15 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>Bachelor of Software Engineering<br />University of Victoria</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+             I’m a software engineer from Canada with hands-on experience across full-stack and AI/ML work - from building RAG systems and backend APIs to crafting frontend interfaces with an intuitive, easy-to-use feel. 
+             I care about writing code that’s clean and genuinely useful, not just functional. 
+             Outside of work, you’ll usually find me hiking, going to live music events, or picking up the guitar to butcher a new cover. 
+             I moved to Japan recently to build a life here while doing work I love, and I’m always up for a new challenge that lets me keep learning.
             </p>
           </div>
         </div>
@@ -125,126 +127,62 @@
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
+      <div class="skill-legend">
+        <span><i class="skill-dot adv"></i>Advanced</span>
+        <span><i class="skill-dot int"></i>Intermediate</span>
+        <span><i class="skill-dot bas"></i>Basic</span>
+      </div>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+            <h2 class="experience-sub-title">Frontend</h2>
+            <div class="skill-chips">
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>React</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>TypeScript</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>JavaScript</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>HTML</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>CSS</span>
+              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Vue.js</span>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+            <h2 class="experience-sub-title">AI &amp; Data</h2>
+            <div class="skill-chips">
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>scikit-learn</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>ChromaDB</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>Qdrant</span>
+              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>TensorFlow</span>
+              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Pandas</span>
+              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>LangChain</span>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend &amp; Databases</h2>
+            <div class="skill-chips">
+              <span class="skill-chip" title="Advanced"><i class="skill-dot adv"></i>Python</span>
+              <span class="skill-chip" title="Advanced"><i class="skill-dot adv"></i>FastAPI</span>
+              <span class="skill-chip" title="Advanced"><i class="skill-dot adv"></i>PostgreSQL</span>
+              <span class="skill-chip" title="Advanced"><i class="skill-dot adv"></i>SQL</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>C#</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>.NET</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>C/C++</span>
+              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Java</span>
+              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>aioHTTP</span>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">DevOps, Testing &amp; Tools</h2>
+            <div class="skill-chips">
+              <span class="skill-chip" title="Advanced"><i class="skill-dot adv"></i>Git</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>Docker</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>GitHub Actions</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>Pytest</span>
+              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>Dynamics 365 (X++, SSRS)</span>
+              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Azure DevOps</span>
+              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>AWS</span>
+              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Linux/Unix</span>
+              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Jest</span>
+              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>xUnit</span>
             </div>
           </div>
         </div>
@@ -257,80 +195,223 @@
       />
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section__text__p1">Browse My Work and Personal</p>
       <h1 class="title">Projects</h1>
+      <h3 class="project-group">Work</h3>
+      <div class="work-entries">
+        <article class="work-entry">
+          <div class="work-entry-header">
+            <div>
+              <h2>Livmora Solutions</h2>
+              <p class="work-entry-role">Developer (Contractor) · Victoria, BC</p>
+            </div>
+            <p class="work-entry-dates">May 2026 – Present</p>
+          </div>
+          <p class="work-entry-summary">Principle Developer building websites, AI tools and automated workflows for local businesses, including a full website and brand overhaul for <a class="inline-link" href="https://prairieinnpub.com/" target="_blank" rel="noopener">The Prairie Inn Pub&nbsp;&#8599;</a>.</p>
+          <div class="skill-chips">
+            <span class="skill-chip">Web Development</span>
+            <span class="skill-chip">Branding</span>
+            <span class="skill-chip">Workflow Automation</span>
+          </div>
+        </article>
+        <article class="work-entry">
+          <div class="work-entry-header">
+            <div>
+              <h2>Sidian.io</h2>
+              <p class="work-entry-role">AI Engineer (Contract)</p>
+            </div>
+            <div class="work-entry-meta">
+              <p class="work-entry-dates">Apr 2026 – May 2026</p>
+              <a class="github-link" href="https://github.com/buddy326/PolicyChunker" target="_blank" rel="noopener" aria-label="PolicyChunker on GitHub" title="PolicyChunker on GitHub"><img src="./assets/github.png" alt="GitHub" class="icon" /></a>
+            </div>
+          </div>
+          <p class="work-entry-summary">Built a privacy-law Q&amp;A system on a two-stage RAG pipeline with hybrid search, reranking and a locally hosted LLM.</p>
+          <div class="skill-chips">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">FastAPI</span>
+            <span class="skill-chip">Qdrant</span>
+            <span class="skill-chip">React</span>
+          </div>
+        </article>
+        <article class="work-entry">
+          <div class="work-entry-header">
+            <div>
+              <h2>SSI</h2>
+              <p class="work-entry-role">Product Developer (Full-time Intern, 5 months) · Victoria, BC</p>
+            </div>
+            <p class="work-entry-dates">Sep 2025 – Jan 2026</p>
+          </div>
+          <p class="work-entry-summary">Built backend modules and modernized the UI of ShipConstructor, industry-leading 3D CAD/CAM software for ship design.</p>
+          <div class="skill-chips">
+            <span class="skill-chip">C#</span>
+            <span class="skill-chip">.NET</span>
+            <span class="skill-chip">C++</span>
+            <span class="skill-chip">WPF</span>
+          </div>
+        </article>
+        <article class="work-entry">
+          <div class="work-entry-header">
+            <div>
+              <h2>Quartech</h2>
+              <p class="work-entry-role">Full Stack Developer (Contract, 14 months) · Victoria, BC</p>
+            </div>
+            <p class="work-entry-dates">May 2023 – Jun 2024</p>
+          </div>
+          <p class="work-entry-summary">Built full stack features for PIMS, the BC Ministry of Transportation&#39;s provincial property management platform.</p>
+          <div class="skill-chips">
+            <span class="skill-chip">React</span>
+            <span class="skill-chip">Vue.js</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">C#</span>
+          </div>
+        </article>
+        <article class="work-entry">
+          <div class="work-entry-header">
+            <div>
+              <h2 title="Canadian Food Inspection Agency">CFIA</h2>
+              <p class="work-entry-role">Backend Python Developer (Full-time Intern, 8 months)</p>
+            </div>
+            <div class="work-entry-meta">
+              <p class="work-entry-dates">May 2022 – Dec 2022</p>
+              <a class="github-link" href="https://github.com/buddy326/virtool-ws" target="_blank" rel="noopener" aria-label="virtool-ws WebSocket service on GitHub" title="virtool-ws WebSocket service on GitHub"><img src="./assets/github.png" alt="GitHub" class="icon" /></a>
+            </div>
+          </div>
+          <p class="work-entry-summary">Built REST APIs and a real-time WebSocket service for <a class="inline-link" href="https://www.virtool.ca/" target="_blank" rel="noopener">Virtool&nbsp;&#8599;</a>, an open-source viral detection platform.</p>
+          <div class="skill-chips">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">aioHTTP</span>
+            <span class="skill-chip">Redis</span>
+            <span class="skill-chip">PostgreSQL</span>
+          </div>
+        </article>
+      </div>
+      <p class="work-cv-note">
+        Want the full details?
+        <a class="inline-link" href="./assets/FSResume.pdf" target="_blank" rel="noopener">View my CV&nbsp;&#8599;</a>
+      </p>
+      <h3 class="project-group">Personal</h3>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container personal-project">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
-                alt="Project 1"
+                src="./assets/pingpong.png"
+                alt="Ping Pong game screenshot"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Ping Pong</h2>
+            <p class="project-summary">
+              A classic Pong game built in C++ with raylib, playable right in
+              the browser.
+            </p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+              <a
+                class="btn btn-color-2 project-btn project-link"
+                href="https://buddy326.github.io/PingPong/"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <a
+                class="github-link"
+                href="https://github.com/buddy326/PingPong"
+                target="_blank"
+                rel="noopener"
+                aria-label="Ping Pong on GitHub"
+                title="Ping Pong on GitHub"
+                ><img src="./assets/github.png" alt="GitHub" class="icon"
+              /></a>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container personal-project">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
-                alt="Project 2"
+                src="./assets/bullethell.png"
+                alt="Bullet Hell game screenshot"
                 class="project-img"
+                style="object-position: 62% center"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Bullet Hell</h2>
+            <p class="project-summary">
+              A fast-paced 2D shooter built in C with raylib, playable right
+              in the browser.
+            </p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+              <a
+                class="btn btn-color-2 project-btn project-link"
+                href="https://buddy326.github.io/BULLETHELL/"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <a
+                class="github-link"
+                href="https://github.com/buddy326/BULLETHELL"
+                target="_blank"
+                rel="noopener"
+                aria-label="Bullet Hell on GitHub"
+                title="Bullet Hell on GitHub"
+                ><img src="./assets/github.png" alt="GitHub" class="icon"
+              /></a>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container personal-project">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
-                alt="Project 3"
+                src="./assets/nasa-gallery.jpg"
+                alt="NASA Space Gallery screenshot"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">NASA Space Gallery</h2>
+            <p class="project-summary">
+              A React app showing NASA&#39;s Astronomy Picture of the Day via
+              the APOD API.
+            </p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+              <a
+                class="btn btn-color-2 project-btn project-link"
+                href="https://buddy326.github.io/NASA-Space-Gallery/"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <a
+                class="github-link"
+                href="https://github.com/buddy326/NASA-Space-Gallery"
+                target="_blank"
+                rel="noopener"
+                aria-label="NASA Space Gallery on GitHub"
+                title="NASA Space Gallery on GitHub"
+                ><img src="./assets/github.png" alt="GitHub" class="icon"
+              /></a>
+            </div>
+          </div>
+          <div class="details-container color-container personal-project">
+            <div class="article-container">
+              <img
+                src="./assets/mangobook.png"
+                alt="MangoBook mango mascot"
+                class="project-img project-img-contain"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">MangoBook</h2>
+            <p class="project-summary">
+              A small social media app for sharing photos and videos to a feed,
+              built with FastAPI and Streamlit.
+            </p>
+            <div class="btn-container">
+              <a
+                class="github-link"
+                href="https://github.com/buddy326/MangoBook"
+                target="_blank"
+                rel="noopener"
+                aria-label="MangoBook on GitHub"
+                title="MangoBook on GitHub"
+                ><img src="./assets/github.png" alt="GitHub" class="icon"
+              /></a>
             </div>
           </div>
         </div>
@@ -345,6 +426,32 @@
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+      <form
+        id="contact-form"
+        class="contact-form"
+        action="https://formsubmit.co/aman260@outlook.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="New message from your portfolio" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" class="contact-honeypot" tabindex="-1" autocomplete="off" />
+        <div class="contact-form-row">
+          <label>
+            Name
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+        </div>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-color-1 contact-submit">Send Message</button>
+        <p class="contact-form-status" role="status" aria-live="polite"></p>
+      </form>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -352,7 +459,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:aman260@outlook.com">aman260@outlook.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -360,7 +467,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/aman-monga-2583a8207">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -375,7 +482,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Aman Monga. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
