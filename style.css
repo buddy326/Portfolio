@@ -67,6 +67,47 @@ a:hover {
   cursor: default;
 }
 
+/* LANGUAGE SWITCH */
+
+html[lang="ja"] body {
+  font-family: "Poppins", "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    "Yu Gothic", "Meiryo", sans-serif;
+}
+
+.nav-links li:has(.lang-toggle) {
+  display: flex;
+  align-items: center;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  padding: 0.2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  border-radius: 999px;
+  background: white;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.lang-toggle span {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  color: rgb(85, 85, 85);
+  transition: all 200ms ease;
+}
+
+.lang-toggle span.active {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.hamburger-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
