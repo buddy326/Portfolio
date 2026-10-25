@@ -1,12 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aman Monga | Portfolio</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon-192.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon-192.png"
+    />
     <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -17,14 +27,20 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about" data-i18n="nav.about">About</a></li>
-          <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li>
+            <a href="#experience" data-i18n="nav.experience">Experience</a>
+          </li>
           <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
           <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
           <li>
-          <button type="button" class="lang-toggle" aria-label="Switch language / 言語を切り替える">
-            <span data-lang-option="en">EN</span>
-            <span data-lang-option="ja">日本語</span>
-          </button>
+            <button
+              type="button"
+              class="lang-toggle"
+              aria-label="Switch language / 言語を切り替える"
+            >
+              <span data-lang-option="en">EN</span>
+              <span data-lang-option="ja">日本語</span>
+            </button>
           </li>
         </ul>
       </div>
@@ -32,23 +48,49 @@
     <nav id="hamburger-nav">
       <div class="logo">Aman Monga</div>
       <div class="hamburger-right">
-        <button type="button" class="lang-toggle" aria-label="Switch language / 言語を切り替える">
+        <button
+          type="button"
+          class="lang-toggle"
+          aria-label="Switch language / 言語を切り替える"
+        >
           <span data-lang-option="en">EN</span>
           <span data-lang-option="ja">日本語</span>
         </button>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li>
+              <a href="#about" onclick="toggleMenu()" data-i18n="nav.about"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#experience"
+                onclick="toggleMenu()"
+                data-i18n="nav.experience"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                onclick="toggleMenu()"
+                data-i18n="nav.projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" onclick="toggleMenu()" data-i18n="nav.contact"
+                >Contact</a
+              >
+            </li>
+          </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()" data-i18n="nav.about">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()" data-i18n="nav.experience">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()" data-i18n="nav.projects">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()" data-i18n="nav.contact">Contact</a></li>
-        </div>
-      </div>
       </div>
     </nav>
     <section id="profile">
@@ -62,7 +104,9 @@
       <div class="section__text">
         <p data-i18n="hero.hello" class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Aman Monga</h1>
-        <p data-i18n="hero.role" class="section__text__p2">Fullstack Developer</p>
+        <p data-i18n="hero.role" class="section__text__p2">
+          Fullstack Developer
+        </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -70,7 +114,10 @@
           >
             <span data-i18n="hero.cv">Download CV</span>
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
             <span data-i18n="hero.contact">Contact Info</span>
           </button>
         </div>
@@ -79,13 +126,15 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/aman-monga-2583a8207'"
+            onclick="
+              location.href = 'https://www.linkedin.com/in/aman-monga-2583a8207'
+            "
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/buddy326'"
+            onclick="location.href = 'https://github.com/buddy326'"
           />
         </div>
       </div>
@@ -110,7 +159,9 @@
                 class="icon"
               />
               <h3 data-i18n="about.expTitle">Experience</h3>
-              <p data-i18n="about.expBody">2+ years <br />Full Stack Development</p>
+              <p data-i18n="about.expBody">
+                2+ years <br />Full Stack Development
+              </p>
             </div>
             <div class="details-container">
               <img
@@ -119,15 +170,22 @@
                 class="icon"
               />
               <h3 data-i18n="about.eduTitle">Education</h3>
-              <p data-i18n="about.eduBody">Bachelor of Software Engineering<br />University of Victoria</p>
+              <p data-i18n="about.eduBody">
+                Bachelor of Software Engineering<br />University of Victoria
+              </p>
             </div>
           </div>
           <div class="text-container">
             <p data-i18n="about.body">
-             I’m a software engineer from Canada with hands-on experience across full-stack and AI/ML work - from building RAG systems and backend APIs to crafting frontend interfaces with an intuitive, easy-to-use feel. 
-             I care about writing code that’s clean and genuinely useful, not just functional. 
-             Outside of work, you’ll usually find me hiking, going to live music events, or picking up the guitar to butcher a new cover. 
-             I moved to Japan recently to build a life here while doing work I love, and I’m always up for a new challenge that lets me keep learning.
+              I’m a software engineer from Canada with hands-on experience
+              across full-stack and AI/ML work - from building RAG systems and
+              backend APIs to crafting frontend interfaces with an intuitive,
+              easy-to-use feel. I care about writing code that’s clean and
+              genuinely useful, not just functional. Outside of work, you’ll
+              usually find me hiking, going to live music events, or picking up
+              the guitar to butcher a new cover. I moved to Japan recently to
+              build a life here while doing work I love, and I’m always up for a
+              new challenge that lets me keep learning.
             </p>
           </div>
         </div>
@@ -136,68 +194,147 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href = './#experience'"
       />
     </section>
     <section id="experience">
       <p data-i18n="exp.kicker" class="section__text__p1">Explore My</p>
       <h1 data-i18n="exp.title" class="title">Experience</h1>
       <div class="skill-legend">
-        <span><i class="skill-dot adv"></i><span data-i18n="level.adv">Advanced</span></span>
-        <span><i class="skill-dot int"></i><span data-i18n="level.int">Intermediate</span></span>
-        <span><i class="skill-dot bas"></i><span data-i18n="level.bas">Basic</span></span>
+        <span
+          ><i class="skill-dot adv"></i
+          ><span data-i18n="level.adv">Advanced</span></span
+        >
+        <span
+          ><i class="skill-dot int"></i
+          ><span data-i18n="level.int">Intermediate</span></span
+        >
+        <span
+          ><i class="skill-dot bas"></i
+          ><span data-i18n="level.bas">Basic</span></span
+        >
       </div>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 data-i18n="exp.frontend" class="experience-sub-title">Frontend</h2>
+            <h2 data-i18n="exp.frontend" class="experience-sub-title">
+              Frontend
+            </h2>
             <div class="skill-chips">
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>React</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>TypeScript</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>JavaScript</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>HTML</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>CSS</span>
-              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Vue.js</span>
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>React</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>TypeScript</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>JavaScript</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>HTML</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>CSS</span
+              >
+              <span class="skill-chip" title="Basic"
+                ><i class="skill-dot bas"></i>Vue.js</span
+              >
             </div>
           </div>
           <div class="details-container">
-            <h2 data-i18n="exp.ai" class="experience-sub-title">AI &amp; Data</h2>
+            <h2 data-i18n="exp.ai" class="experience-sub-title">
+              AI &amp; Data
+            </h2>
             <div class="skill-chips">
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>scikit-learn</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>ChromaDB</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>Qdrant</span>
-              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>TensorFlow</span>
-              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Pandas</span>
-              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>LangChain</span>
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>scikit-learn</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>ChromaDB</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>Qdrant</span
+              >
+              <span class="skill-chip" title="Basic"
+                ><i class="skill-dot bas"></i>TensorFlow</span
+              >
+              <span class="skill-chip" title="Basic"
+                ><i class="skill-dot bas"></i>Pandas</span
+              >
+              <span class="skill-chip" title="Basic"
+                ><i class="skill-dot bas"></i>LangChain</span
+              >
             </div>
           </div>
           <div class="details-container">
-            <h2 data-i18n="exp.backend" class="experience-sub-title">Backend &amp; Databases</h2>
+            <h2 data-i18n="exp.backend" class="experience-sub-title">
+              Backend &amp; Databases
+            </h2>
             <div class="skill-chips">
-              <span class="skill-chip" title="Advanced"><i class="skill-dot adv"></i>Python</span>
-              <span class="skill-chip" title="Advanced"><i class="skill-dot adv"></i>FastAPI</span>
-              <span class="skill-chip" title="Advanced"><i class="skill-dot adv"></i>PostgreSQL</span>
-              <span class="skill-chip" title="Advanced"><i class="skill-dot adv"></i>SQL</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>C#</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>.NET</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>C/C++</span>
-              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Java</span>
-              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>aioHTTP</span>
+              <span class="skill-chip" title="Advanced"
+                ><i class="skill-dot adv"></i>Python</span
+              >
+              <span class="skill-chip" title="Advanced"
+                ><i class="skill-dot adv"></i>FastAPI</span
+              >
+              <span class="skill-chip" title="Advanced"
+                ><i class="skill-dot adv"></i>PostgreSQL</span
+              >
+              <span class="skill-chip" title="Advanced"
+                ><i class="skill-dot adv"></i>SQL</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>C#</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>.NET</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>C/C++</span
+              >
+              <span class="skill-chip" title="Basic"
+                ><i class="skill-dot bas"></i>Java</span
+              >
+              <span class="skill-chip" title="Basic"
+                ><i class="skill-dot bas"></i>aioHTTP</span
+              >
             </div>
           </div>
           <div class="details-container">
-            <h2 data-i18n="exp.devops" class="experience-sub-title">DevOps, Testing &amp; Tools</h2>
+            <h2 data-i18n="exp.devops" class="experience-sub-title">
+              DevOps, Testing &amp; Tools
+            </h2>
             <div class="skill-chips">
-              <span class="skill-chip" title="Advanced"><i class="skill-dot adv"></i>Git</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>Docker</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>GitHub Actions</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>Pytest</span>
-              <span class="skill-chip" title="Intermediate"><i class="skill-dot int"></i>Dynamics 365 (X++, SSRS)</span>
-              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Azure DevOps</span>
-              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>AWS</span>
-              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Linux/Unix</span>
-              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>Jest</span>
-              <span class="skill-chip" title="Basic"><i class="skill-dot bas"></i>xUnit</span>
+              <span class="skill-chip" title="Advanced"
+                ><i class="skill-dot adv"></i>Git</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>Docker</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>GitHub Actions</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>Pytest</span
+              >
+              <span class="skill-chip" title="Intermediate"
+                ><i class="skill-dot int"></i>Dynamics 365 (X++, SSRS)</span
+              >
+              <span class="skill-chip" title="Basic"
+                ><i class="skill-dot bas"></i>Azure DevOps</span
+              >
+              <span class="skill-chip" title="Basic"
+                ><i class="skill-dot bas"></i>AWS</span
+              >
+              <span class="skill-chip" title="Basic"
+                ><i class="skill-dot bas"></i>Linux/Unix</span
+              >
+              <span class="skill-chip" title="Basic"
+                ><i class="skill-dot bas"></i>Jest</span
+              >
+              <span class="skill-chip" title="Basic"
+                ><i class="skill-dot bas"></i>xUnit</span
+              >
             </div>
           </div>
         </div>
@@ -206,11 +343,13 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href = './#projects'"
       />
     </section>
     <section id="projects">
-      <p data-i18n="proj.kicker" class="section__text__p1">Browse My Work and Personal</p>
+      <p data-i18n="proj.kicker" class="section__text__p1">
+        Browse My Work and Personal
+      </p>
       <h1 data-i18n="proj.title" class="title">Projects</h1>
       <h3 data-i18n="proj.work" class="project-group">Work</h3>
       <div class="work-entries">
@@ -218,29 +357,65 @@
           <div class="work-entry-header">
             <div>
               <h2>Livmora Solutions</h2>
-              <p data-i18n="work.livmora.role" class="work-entry-role">Developer (Contractor) · Victoria, BC</p>
+              <p data-i18n="work.livmora.role" class="work-entry-role">
+                Developer (Contractor) · Victoria, BC
+              </p>
             </div>
-            <p data-i18n="work.livmora.dates" class="work-entry-dates">May 2026 – Present</p>
+            <p data-i18n="work.livmora.dates" class="work-entry-dates">
+              May 2026 – Present
+            </p>
           </div>
-          <p class="work-entry-summary" data-i18n="work.livmora.summary">Principle Developer building websites, AI tools and automated workflows for local businesses, including a full website and brand overhaul for <a class="inline-link" href="https://prairieinnpub.com/" target="_blank" rel="noopener">The Prairie Inn Pub&nbsp;&#8599;</a>.</p>
+          <p class="work-entry-summary" data-i18n="work.livmora.summary">
+            Principal Developer building websites, AI tools and automated
+            workflows for local businesses, including a full website and brand
+            overhaul for
+            <a
+              class="inline-link"
+              href="https://prairieinnpub.com/"
+              target="_blank"
+              rel="noopener"
+              >The Prairie Inn Pub&nbsp;&#8599;</a
+            >.
+          </p>
           <div class="skill-chips">
-            <span data-i18n="work.chip.web" class="skill-chip">Web Development</span>
-            <span data-i18n="work.chip.branding" class="skill-chip">Branding</span>
-            <span data-i18n="work.chip.automation" class="skill-chip">Workflow Automation</span>
+            <span data-i18n="work.chip.web" class="skill-chip"
+              >Web Development</span
+            >
+            <span data-i18n="work.chip.branding" class="skill-chip"
+              >Branding</span
+            >
+            <span data-i18n="work.chip.automation" class="skill-chip"
+              >Workflow Automation</span
+            >
           </div>
         </article>
         <article class="work-entry">
           <div class="work-entry-header">
             <div>
               <h2>Sidian.io</h2>
-              <p data-i18n="work.sidian.role" class="work-entry-role">AI Engineer (Contract)</p>
+              <p data-i18n="work.sidian.role" class="work-entry-role">
+                AI Engineer (Contract)
+              </p>
             </div>
             <div class="work-entry-meta">
-              <p data-i18n="work.sidian.dates" class="work-entry-dates">Apr 2026 – May 2026</p>
-              <a class="github-link" href="https://github.com/buddy326/PolicyChunker" target="_blank" rel="noopener" aria-label="PolicyChunker on GitHub" title="PolicyChunker on GitHub"><img src="./assets/github.png" alt="GitHub" class="icon" /></a>
+              <p data-i18n="work.sidian.dates" class="work-entry-dates">
+                Apr 2026 – May 2026
+              </p>
+              <a
+                class="github-link"
+                href="https://github.com/buddy326/PolicyChunker"
+                target="_blank"
+                rel="noopener"
+                aria-label="PolicyChunker on GitHub"
+                title="PolicyChunker on GitHub"
+                ><img src="./assets/github.png" alt="GitHub" class="icon"
+              /></a>
             </div>
           </div>
-          <p data-i18n="work.sidian.summary" class="work-entry-summary">Built a privacy-law Q&amp;A system on a two-stage RAG pipeline with hybrid search, reranking and a locally hosted LLM.</p>
+          <p data-i18n="work.sidian.summary" class="work-entry-summary">
+            Built a privacy-law Q&amp;A system on a two-stage RAG pipeline with
+            hybrid search, reranking and a locally hosted LLM.
+          </p>
           <div class="skill-chips">
             <span class="skill-chip">Python</span>
             <span class="skill-chip">FastAPI</span>
@@ -252,11 +427,18 @@
           <div class="work-entry-header">
             <div>
               <h2>SSI</h2>
-              <p data-i18n="work.ssi.role" class="work-entry-role">Product Developer (Full-time Intern, 5 months) · Victoria, BC</p>
+              <p data-i18n="work.ssi.role" class="work-entry-role">
+                Product Developer (Full-time Intern, 5 months) · Victoria, BC
+              </p>
             </div>
-            <p data-i18n="work.ssi.dates" class="work-entry-dates">Sep 2025 – Jan 2026</p>
+            <p data-i18n="work.ssi.dates" class="work-entry-dates">
+              Sep 2025 – Jan 2026
+            </p>
           </div>
-          <p data-i18n="work.ssi.summary" class="work-entry-summary">Built backend modules and modernized the UI of ShipConstructor, industry-leading 3D CAD/CAM software for ship design.</p>
+          <p data-i18n="work.ssi.summary" class="work-entry-summary">
+            Built backend modules and modernized the UI of ShipConstructor,
+            industry-leading 3D CAD/CAM software for ship design.
+          </p>
           <div class="skill-chips">
             <span class="skill-chip">C#</span>
             <span class="skill-chip">.NET</span>
@@ -268,11 +450,18 @@
           <div class="work-entry-header">
             <div>
               <h2>Quartech</h2>
-              <p data-i18n="work.quartech.role" class="work-entry-role">Full Stack Developer (Contract, 14 months) · Victoria, BC</p>
+              <p data-i18n="work.quartech.role" class="work-entry-role">
+                Full Stack Developer (Contract, 14 months) · Victoria, BC
+              </p>
             </div>
-            <p data-i18n="work.quartech.dates" class="work-entry-dates">May 2023 – Jun 2024</p>
+            <p data-i18n="work.quartech.dates" class="work-entry-dates">
+              May 2023 – Jun 2024
+            </p>
           </div>
-          <p data-i18n="work.quartech.summary" class="work-entry-summary">Built full stack features for PIMS, the BC Ministry of Transportation&#39;s provincial property management platform.</p>
+          <p data-i18n="work.quartech.summary" class="work-entry-summary">
+            Built full stack features for PIMS, the BC Ministry of
+            Transportation&#39;s provincial property management platform.
+          </p>
           <div class="skill-chips">
             <span class="skill-chip">React</span>
             <span class="skill-chip">Vue.js</span>
@@ -283,15 +472,41 @@
         <article class="work-entry">
           <div class="work-entry-header">
             <div>
-              <h2 title="Canadian Food Inspection Agency" data-i18n-title="work.cfia.fullName">CFIA</h2>
-              <p data-i18n="work.cfia.role" class="work-entry-role">Backend Python Developer (Full-time Intern, 8 months)</p>
+              <h2
+                title="Canadian Food Inspection Agency"
+                data-i18n-title="work.cfia.fullName"
+              >
+                CFIA
+              </h2>
+              <p data-i18n="work.cfia.role" class="work-entry-role">
+                Backend Python Developer (Full-time Intern, 8 months)
+              </p>
             </div>
             <div class="work-entry-meta">
-              <p data-i18n="work.cfia.dates" class="work-entry-dates">May 2022 – Dec 2022</p>
-              <a class="github-link" href="https://github.com/buddy326/virtool-ws" target="_blank" rel="noopener" aria-label="virtool-ws WebSocket service on GitHub" title="virtool-ws WebSocket service on GitHub"><img src="./assets/github.png" alt="GitHub" class="icon" /></a>
+              <p data-i18n="work.cfia.dates" class="work-entry-dates">
+                May 2022 – Dec 2022
+              </p>
+              <a
+                class="github-link"
+                href="https://github.com/buddy326/virtool-ws"
+                target="_blank"
+                rel="noopener"
+                aria-label="virtool-ws WebSocket service on GitHub"
+                title="virtool-ws WebSocket service on GitHub"
+                ><img src="./assets/github.png" alt="GitHub" class="icon"
+              /></a>
             </div>
           </div>
-          <p class="work-entry-summary" data-i18n="work.cfia.summary">Built REST APIs and a real-time WebSocket service for <a class="inline-link" href="https://www.virtool.ca/" target="_blank" rel="noopener">Virtool&nbsp;&#8599;</a>, an open-source viral detection platform.</p>
+          <p class="work-entry-summary" data-i18n="work.cfia.summary">
+            Built REST APIs and a real-time WebSocket service for
+            <a
+              class="inline-link"
+              href="https://www.virtool.ca/"
+              target="_blank"
+              rel="noopener"
+              >Virtool&nbsp;&#8599;</a
+            >, an open-source viral detection platform.
+          </p>
           <div class="skill-chips">
             <span class="skill-chip">Python</span>
             <span class="skill-chip">aioHTTP</span>
@@ -302,7 +517,13 @@
       </div>
       <p class="work-cv-note" data-i18n="proj.cvNote">
         Want the full details?
-        <a class="inline-link" href="./assets/FSResume.pdf" target="_blank" rel="noopener">View my CV&nbsp;&#8599;</a>
+        <a
+          class="inline-link"
+          href="./assets/FSResume.pdf"
+          target="_blank"
+          rel="noopener"
+          >View my CV&nbsp;&#8599;</a
+        >
       </p>
       <h3 data-i18n="proj.personal" class="project-group">Personal</h3>
       <div class="experience-details-container">
@@ -326,7 +547,8 @@
                 href="https://buddy326.github.io/PingPong/"
                 target="_blank"
                 rel="noopener"
-                data-i18n="proj.demo">Live Demo</a
+                data-i18n="proj.demo"
+                >Live Demo</a
               >
               <a
                 class="github-link"
@@ -350,8 +572,8 @@
             </div>
             <h2 class="experience-sub-title project-title">Bullet Hell</h2>
             <p class="project-summary" data-i18n="personal.bullethell">
-              A fast-paced 2D shooter built in C with raylib, playable right
-              in the browser.
+              A fast-paced 2D shooter built in C with raylib, playable right in
+              the browser.
             </p>
             <div class="btn-container">
               <a
@@ -359,7 +581,8 @@
                 href="https://buddy326.github.io/BULLETHELL/"
                 target="_blank"
                 rel="noopener"
-                data-i18n="proj.demo">Live Demo</a
+                data-i18n="proj.demo"
+                >Live Demo</a
               >
               <a
                 class="github-link"
@@ -380,7 +603,9 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">NASA Space Gallery</h2>
+            <h2 class="experience-sub-title project-title">
+              NASA Space Gallery
+            </h2>
             <p class="project-summary" data-i18n="personal.nasa">
               A React app showing NASA&#39;s Astronomy Picture of the Day via
               the APOD API.
@@ -391,7 +616,8 @@
                 href="https://buddy326.github.io/NASA-Space-Gallery/"
                 target="_blank"
                 rel="noopener"
-                data-i18n="proj.demo">Live Demo</a
+                data-i18n="proj.demo"
+                >Live Demo</a
               >
               <a
                 class="github-link"
@@ -435,7 +661,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href = './#contact'"
       />
     </section>
     <section id="contact">
@@ -447,9 +673,19 @@
         action="https://formsubmit.co/aman260@outlook.com"
         method="POST"
       >
-        <input type="hidden" name="_subject" value="New message from your portfolio" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New message from your portfolio"
+        />
         <input type="hidden" name="_template" value="table" />
-        <input type="text" name="_honey" class="contact-honeypot" tabindex="-1" autocomplete="off" />
+        <input
+          type="text"
+          name="_honey"
+          class="contact-honeypot"
+          tabindex="-1"
+          autocomplete="off"
+        />
         <div class="contact-form-row">
           <label>
             <span data-i18n="form.name">Name</span>
@@ -464,7 +700,13 @@
           <span data-i18n="form.message">Message</span>
           <textarea name="message" rows="5" required></textarea>
         </label>
-        <button type="submit" class="btn btn-color-1 contact-submit" data-i18n="form.send">Send Message</button>
+        <button
+          type="submit"
+          class="btn btn-color-1 contact-submit"
+          data-i18n="form.send"
+        >
+          Send Message
+        </button>
         <p class="contact-form-status" role="status" aria-live="polite"></p>
       </form>
       <div class="contact-info-upper-container">
@@ -482,7 +724,11 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/aman-monga-2583a8207">LinkedIn</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/aman-monga-2583a8207"
+              >LinkedIn</a
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -491,7 +737,9 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about" data-i18n="nav.about">About</a></li>
-            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li>
+              <a href="#experience" data-i18n="nav.experience">Experience</a>
+            </li>
             <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
             <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
           </ul>
