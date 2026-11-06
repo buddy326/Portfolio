@@ -5,6 +5,15 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+const CV_FILES = {
+  en: "./assets/CResume.pdf",
+  ja: "./assets/FSResume.pdf",
+};
+
+function openCV() {
+  window.open(CV_FILES[currentLang]);
+}
+
 /* LANGUAGE SWITCH */
 
 const LANG_STORAGE_KEY = "portfolio-lang";
